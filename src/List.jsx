@@ -1,13 +1,12 @@
-const List = (props) => {
-
-    const skills = props.skills
+const List = ({items, title}) => {
 
     return ( 
         <div className="home-list">
-            {skills.map((skill) => ( 
-                <div className="list" key={skill.id}>
-                    <h2>{ skill.title } </h2>
-                    <p>Experience: { skill.exp }</p>
+            <h2>{title}</h2>
+            {items.map((item) => ( 
+                <div className="list" key={item.id}>
+                    <h2>{ item.title } </h2>
+                    <p>{item.qualifier}: { item.description }</p>
                 </div>
              ))}
         </div>
