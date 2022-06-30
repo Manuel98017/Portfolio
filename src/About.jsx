@@ -4,12 +4,9 @@ import List from './List';
 const About = () => {
 
     const [skills, setSkills] = useState([
-        { title: 'HTML', qualifier: 'Skill', description: 'Junior', id: 1 },
-        { title: 'CSS', qualifier: 'Skill', description: 'Junior', id: 2 },
-        { title: 'JavaScript', qualifier: 'Skill', description: 'Junior', id: 3 },
-        { title: 'NodeJS', qualifier: 'Skill', description: 'Junior', id: 4 },
-        { title: 'React', qualifier: 'Skill', description: 'Junior', id: 5 },
-        { title: 'Bootstrap', qualifier: 'Skill', description: 'Junior', id: 6 }
+        { title: 'JavaScript', qualifier: 'Skill', description: 'Junior', id: 1 },
+        { title: 'NodeJS', qualifier: 'Skill', description: 'Junior', id: 2 },
+        { title: 'React', qualifier: 'Skill', description: 'Junior', id: 3 },
     ]);
 
     const [experience, setExperience] = useState([

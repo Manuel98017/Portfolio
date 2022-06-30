@@ -1,16 +1,30 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Suspense } from 'react';
 
 const Navbar = () => {
-    return ( 
+
+    const { t, i18n } = useTranslation();
+
+    return (
         <nav className="navbar">
-            <Link to="/"><h1>Manu: web developer</h1></Link>            
+            <Link to="/"><h1>{t('navbar_title')}</h1></Link>
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/about">About</Link>
+                <Link to="/">{t('navbar_home')}</Link>
+                <Link to="/contact">{t('navbar_contact')}</Link>
+                <Link to="/about">{t('navbar_about')}</Link>
             </div>
+            <ul className='langSelector'>
+                <li></li>
+            </ul>
         </nav>
-     );
+    );
 }
- 
-export default Navbar;
+
+export default function App() {
+    return (
+        <Suspense fallback="Loading...">
+            <Navbar />
+        </Suspense>
+    )
+}
