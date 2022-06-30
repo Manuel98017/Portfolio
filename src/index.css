@@ -34,6 +34,27 @@
   padding: 20px;
 }
 
+/* links*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
 /* skill previews / list */
 .list {
   padding: 10px 16px;
@@ -47,4 +68,91 @@
   font-size: 20px;
   color: #17d4a8;
   margin-bottom: 8px;
+}
+
+/* language switcher */
+
+.switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.switch input {
+  appearance: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background: #333;
+  outline: none;
+}
+.switch input::before, 
+.switch input::after {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bolder;
+}
+
+.switch input::before {
+  content: "EN";
+  left: 20px;
+}
+
+.switch input::after {
+  content: "ES";
+  right: 20px;
+}
+
+.switch input:checked {
+  background: #17d4a8;
+}
+
+.switch label {
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  border-radius: 20px;
+}
+
+.switch input {
+  transition: 0.25s;
+}
+
+.switch input:checked::before, 
+.switch input:checked::after {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.switch input:checked+label {
+  left: 10px;
+  right: 50px;
+  background: #333;
+  transition: left 0.5s , right 0.4s 0.2s;
+}
+
+.switch input:not(:checked) {
+  background: #333;
+  transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.switch input:not(:checked)::after {
+  color: #333;
+  transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked) +label {
+  left: 50px;
+  right: 10px;
+  background: #17d4a8;
+  transition: left 0.4s 0.2s , right 0.5s , background 0.35s;
 }
