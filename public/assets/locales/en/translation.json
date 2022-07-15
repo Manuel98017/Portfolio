@@ -4,5 +4,7 @@
     "navbar_contact": "Contact",
     "navbar_about": "About",
     "home_title": "Hello there!",
-    "home_text": "Lorem english, ipsum dolor sit amet consectetur adipisicing elit."
+    "home_text": "Lorem english, ipsum dolor sit amet consectetur adipisicing elit.",
+    "contact_title": "Contact",
+    "contact_details": "Contact details"
 }

@@ -1,8 +1,10 @@
 {
     "navbar_title": "Manu: web dev",
     "navbar_home": "Home",
-    "navbar_contact": "Contact",
-    "navbar_about": "About",
+    "navbar_contact": "Contacto",
+    "navbar_about": "Sobre mi",
     "home_title": "Hola!",
-    "home_text": "Lorem español, ipsum dolor sit amet consectetur adipisicing elit."
+    "home_text": "Lorem español, ipsum dolor sit amet consectetur adipisicing elit.",
+    "contact_title": "Contacto",
+    "contact_details": "Detalles de contacto"
 }

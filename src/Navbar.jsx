@@ -12,17 +12,17 @@ const Navbar = () => {
     
     setChecked(!checked); 
 
-checked ? i18next.changeLanguage('es') : i18next.changeLanguage('en')
+checked ? i18next.changeLanguage('en') : i18next.changeLanguage('es')
     
   }; 
 
 
     return (
         <nav className="navbar">
-            <Link to="/"><h1>{t('navbar_title')}</h1></Link>
-            <Link to="/">{t('navbar_home')}</Link>
-            <Link to="/contact">{t('navbar_contact')}</Link>
-            <Link to="/about">{t('navbar_about')}</Link>
+            <span className='title'><Link to="/"><h1>{t('navbar_title')}</h1></Link></span>
+            <span className='link'><Link to="/">{t('navbar_home')}</Link></span>
+            <span className='link'><Link to="/contact">{t('navbar_contact')}</Link></span>
+            <span className='link'><Link to="/about">{t('navbar_about')}</Link></span>
             <span className='switch'>
                 <input type='checkbox' id='switcher' onChange={handleChange}/>
                 <label htmlFor="switcher"></label>
