@@ -6,5 +6,20 @@
     "home_title": "Hola!",
     "home_text": "Lorem español, ipsum dolor sit amet consectetur adipisicing elit.",
     "contact_title": "Contacto",
-    "contact_details": "Detalles de contacto"
+    "contact_details": "Detalles de contacto",
+    "about_experience": "Experiencia",
+    "about_experience_1_title": "Evaluador",
+    "about_experience_1_description": "Donde: Telus Int.",
+    "about_skills": "Habilidades",
+    "about_skills_1_title": "JavaScript",
+    "about_skills_1_description": "Nivel: Junior",
+    "about_skills_2_title": "NodeJS",
+    "about_skills_2_description": "Nivel: Junior",
+    "about_skills_3_title": "React",
+    "about_skills_3_description": "Nivel: Junior",
+    "about_studies": "Estudios",
+    "about_studies_1_title": "Full Stack Developer",
+    "about_studies_1_description": "Donde: Digital House",
+    "about_studies_2_title": "UX Designer",
+    "about_studies_2_description": "Donde: Google"
 }
