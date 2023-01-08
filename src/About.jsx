@@ -6,12 +6,6 @@ const About = () => {
 
     const { t, i18n } = useTranslation();
 
-
-    const [studies, setStudies] = useState([
-        { title: 'Full Stack Developer', qualifier: 'Where', description: 'Digital House', id: 1 },
-        { title: 'UX Designer', qualifier: 'Where', description: 'Google', id: 2 },
-    ])
-
     return (
         <div className="home">
             <div className="home-list">

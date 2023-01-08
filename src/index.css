@@ -2,7 +2,7 @@
 
 /* base styles */
 * {
-  margin: 0;
+  margin: 0px;
   font-family: 'Roboto Mono', monospace;
   color: #333;
 }
@@ -19,9 +19,12 @@
 }
 .navbar a {
   margin: 10px;
-  justify-content: space-between;
-  text-decoration: none;
   padding: 6px;
+  text-decoration: none;
+}
+.element {
+  width: 140px;
+  margin: 10px;
 }
 .navbar a:hover {
   color: #17d4a8;
@@ -35,8 +38,8 @@
 /* language switcher */
 
 .switch {
-  position: fixed;
-  right: 200px;
+  position: relative;
+  right: 10px;
   width: 60px;
   height: 30px;
   border-radius: 25px;
